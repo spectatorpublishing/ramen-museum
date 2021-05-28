@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Monday from './components/Monday'
+import Tuesday from './components/Tuesday'
+import Wednesday from './components/Wednesday'
+import Thursday from './components/Thursday'
+import Friday from './components/Friday'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:'#FFFCF5'}}>
+      <Monday/>
+      <Tuesday/>
+      <Wednesday/>
+      <Thursday/>
+      <Friday/>
+      
+
     </div>
   );
 }
