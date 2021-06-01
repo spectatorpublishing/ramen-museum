@@ -34,8 +34,7 @@ export const day_articles = [
         Goodnight! `,
     },
     {
-        thursday1:`
-        After the change in environment from studying at the library yesterday, I decided to stay inside all day to study today. A couple of hours passed, and I was starting to feel a little restless so I made a matcha latte to destress. I really love matcha, and this recipe is so easy. 
+        thursday1:`After the change in environment from studying at the library yesterday, I decided to stay inside all day to study today. A couple of hours passed, and I was starting to feel a little restless so I made a matcha latte to destress. I really love matcha, and this recipe is so easy. 
         After I finish up in the kitchen I feel ready to hit the books for a couple more hours. 
         `,
         thursday2:`
