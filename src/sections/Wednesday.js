@@ -5,7 +5,7 @@ import TikTok from '../images/TikTok.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'
 import styled from 'styled-components'
-import { DayOfWeek,Vector,Picture, FirstLetter,Par, ButtonCont, SwipeBtn, swipe} from '../style.js';
+import { DayOfWeek,Vector,Picture, FirstLetter,Par, ButtonCont, SwipeBtn, Arrow, swipe} from '../style.js';
 
 const TikTokPic=styled.img`
     display:block;
@@ -26,7 +26,8 @@ const Wednesday = () => {
                         <Par>{day_articles[2].wednesday2}</Par>
                         <Picture src={Empty} alt="Placeholder image"/>
                         <ButtonCont> 
-                            <SwipeBtn value= "#Tuesday" onClick={(e)=>swipe(e)}><img alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn> <SwipeBtn value= "#Thursday" onClick={(e)=>swipe(e)}>THURSDAY<img alt="Forward arrow" src={rightArr}/></SwipeBtn>
+                            <SwipeBtn value= "Tuesday" onClick={(e)=>swipe(e.target.value)}><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn> 
+                            <SwipeBtn value= "Thursday" onClick={(e)=>swipe(e.target.value)}>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn>
                         </ButtonCont> 
                 <Vector src={Man}/>
         </div>

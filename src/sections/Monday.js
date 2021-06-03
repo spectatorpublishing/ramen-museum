@@ -4,7 +4,8 @@ import verVectors from '../images/verticalVectors.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'
 import styled from 'styled-components';
-import { DayOfWeek, Vector, FirstLetter, LeftVectors, ButtonCont, SwipeBtn, swipe} from '../style.js';
+
+import { DayOfWeek, Vector, FirstLetter, LeftVectors, ButtonCont, SwipeBtn, swipe, Arrow} from '../style.js';
 
 export const VerVector= styled.img`
     width:12%;    
@@ -30,7 +31,7 @@ export const VectorPar=styled.p`
 
 const Monday = () => {
     return (
-            <div id="Monday">
+            <div id="Monday" >
                 <DayOfWeek>Monday</DayOfWeek> 
                 <LeftVectors>
                     <VerVector src={verVectors} alt="Vertical wavy design"/>
@@ -39,7 +40,8 @@ const Monday = () => {
                         <VectorPar>{day_articles[0].monday2}</VectorPar>
                         <VectorPar>{day_articles[0].monday3}</VectorPar>
                         <ButtonCont style={{margin:'5vw'}}> 
-                            <SwipeBtn value= "" onClick={(e)=>swipe(e)}><img alt="Back arrow" src={leftArr}/> HOME</SwipeBtn> <SwipeBtn value= "#Tuesday" onClick={(e)=>swipe(e)}>TUESDAY <img alt="Forward arrow" src={rightArr}/></SwipeBtn>
+                            <SwipeBtn value= "Monday" onClick={(e)=>swipe(e.target.value)}><Arrow alt="Back arrow" src={leftArr}/> HOME</SwipeBtn> 
+                            <SwipeBtn value= "Tuesday" onClick={(e)=>swipe(e.target.value)}>TUESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn>
                         </ButtonCont>  
                     </div>
                 </LeftVectors>

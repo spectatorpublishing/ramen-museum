@@ -96,8 +96,11 @@ export const SwipeBtn= styled.button`
     text-decoration:underline;
     font-family: 'Scada', sans-serif;
 `
+export const Arrow=styled.img`
+    margin:3px;
+`
+
 //buttons onclick function
 export const swipe=(e)=>{
-    console.log(e.target.value);
-    window.location.replace(`/${e.target.value}`)
+    window.location.replace(`/#${e}`)
 }

@@ -5,7 +5,7 @@ import Ramen from '../images/Ramen.png'
 import Food from '../images/Food.png'
 import styled from 'styled-components'
 import leftArr from '../images/LeftArrow.png'
-import { DayOfWeek,Vector, Par, Picture, FirstLetter, ButtonCont, SwipeBtn, swipe} from '../style.js';
+import { DayOfWeek,Vector, Par, Picture, FirstLetter, ButtonCont, SwipeBtn, Arrow, swipe} from '../style.js';
 
 const ParContainer=styled.div`
     width:50%;
@@ -61,7 +61,7 @@ const Friday = () => {
                 <Par>{day_articles[4].friday5}</Par>
                 <Vector src={vectors}/>
                 <ButtonCont> 
-                    <SwipeBtn value= "#Thursday" onClick={(e)=>swipe(e)}><img alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn>
+                    <SwipeBtn value= "Thursday" onClick={(e)=>swipe(e.target.value)}><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn>
                 </ButtonCont>  
         </div>
     )
