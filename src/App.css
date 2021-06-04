@@ -18,7 +18,7 @@ weekday {
   font-size: 27px;
 }
 
-#nav a:active, #nav a:hover{
+#nav .active{
   color: white;
   font-weight: 700;
   line-height: 36px;

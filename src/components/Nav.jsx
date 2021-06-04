@@ -1,32 +1,32 @@
+import $ from 'jquery';
 
+function Nav() {
+    
+    //creates object of all elements with <a> tag
+    var items = $("a");
 
-function Nav({day}) {
-    
-    function clickSingleA(a)
-    {
-        var items = document.querySelectorAll('.single.active');
-    
-        if(items.length) 
-        {
-            items[0].className = 'single';
-        }
-    
-        a.className = 'single active';
-    }
+    //onclick function that removes the active class from all previous 
+    //<a> elements and   adds it back to elemtn that was clicked
+
+    items.on("click",function(){
+        items.removeClass("active");
+        $(this).toggleClass("active");
+    });
+ 
 
     return(
         
         <weekday>
 
-        <a href="#dd" onclick="clickSingleA(this)" class = "single">Monday</a>
+        <a href="#dd">Monday</a>
         
-        <a href="#gf">Tuesday</a>
+        <a href="#tuesday">Tuesday</a>
         
-        <a href="#">Wednesday</a>
+        <a href="#wednesday">Wednesday</a>
 
-        <a href="#">Thursday</a>
+        <a href="#thursday">Thursday</a>
 
-        <a href="#">Friday</a>
+        <a href="#friday">Friday</a>
 
         </weekday>
     )
