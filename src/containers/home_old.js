@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import foodBackground from '../images/top_background.png'
 import vector from '../images/top_overlay_vector.png'
 import ramenLogo from '../images/ramen_museum_logo.png'
 
 import { device } from '../device';
 
 const Wrapper1 = styled.div`
-    background-image: url(https://s3-alpha-sig.figma.com/img/1a28/895d/fcc125d44e25b4b14f1c759cf674fa5b?Expires=1623024000&Signature=ccjo2IDnSKLKgNyROBKNKET4oX13O8xSzaN7viLtUuTEpD9dtnu~1fUa4L4u94Ky5WzAPTudstz0EMq3p8ANyLaUx4V9cBv22ESpOhEPZX22eEPMG6rAdllBbKE4zKj8gdvf-NZ0kqcvnOBJPC3MANcTLFSFJwh~2SP59RzKbTqlMczCVSWX33I-S~WdjWQAcm4ST3tkNgLHsyvBvkCKxeehcbS~uEReUmJHJpeIFLwPnzsp288AtiTURXZTXxB4fg2m-g4QN9S4p4V277cBBLVGKsmtar-UXwCAr0BniOdPZg1wUPDTUzrWz1tCS7AkaS8LXItAkaMLxczdnKgxUg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-image: url(${foodBackground});
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,9 +61,9 @@ const Title = styled.div`
     align-self: flex-start;
     padding-left: 5rem;
     padding-right: 15rem;
+    padding-top: 6rem;
 
 `;
-
 
 const LeftTitle = styled.h1`
     color: #A05C50;
@@ -124,11 +125,11 @@ const IntroWrapper = styled.div`
 const MainText = styled.p`
     color: black;
 
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 31px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     
     @media ${device.tablet} {
     }

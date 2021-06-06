@@ -51,7 +51,11 @@ const TextWrapper = styled.div`
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
-
+        
+        margin: auto;
+        padding: 1rem;
+        width: fit-content;
+        text-align: left;
     }
 
     @media ${device.laptopS} {
@@ -63,6 +67,10 @@ const TextWrapper = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         
+        margin: auto;
+        padding: 1rem;
+        width: fit-content;
+        text-align: left;
     }
 `;
 
@@ -95,10 +103,7 @@ const SBSLogoImg = styled.img`
 `;
 
 const Title = styled.div`
-    display: none; 
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 0rem;
+    display: none;    
     
     @media ${device.laptop} {
         display: flex;
@@ -119,61 +124,6 @@ const Title = styled.div`
 `;
 
 const LeftTitle = styled.h1`
-    display: none;    
-
-    @media ${device.laptop} {
-        display: flex;    
-
-        color: #A05C50;
-        font-family: Bitter;
-        font-style: italic;
-        font-weight: bold;
-
-        font-size: 2.5rem;
-    }
-
-    @media ${device.laptopS} {
-        display: flex;    
-
-        color: #A05C50;
-        font-family: Bitter;
-        font-style: italic;
-        font-weight: bold;
-
-        font-size: 2.5rem;
-    }
-
-`;
-
-const RightTitle = styled.h1`
-    display: none;    
-
-    @media ${device.laptop} {
-        display: flex;    
-
-        color: black;
-        font-family: Bitter;
-        font-style: normal;
-        font-weight: 500;
-        
-        font-size: 2.5rem;
-        padding-left: 0.5rem;
-    }
-
-    @media ${device.laptopS} {
-        display: flex;    
-
-        color: black;
-        font-family: Bitter;
-        font-style: normal;
-        font-weight: 500;
-        
-        font-size: 2.5rem;
-        padding-left: 0.5rem;
-    }
-`;
-
-const LeftTitleMobile = styled.h1`
     color: #A05C50;
     font-family: Bitter;
     font-style: italic;
@@ -181,22 +131,22 @@ const LeftTitleMobile = styled.h1`
     
     font-size: 1.5rem;
 
-    padding-top: 0rem;
+    padding-top: 5rem;
     padding-left: 1rem;
 
     @media ${device.tablet} {
     }
 
     @media ${device.laptopS} {
-        display: none;
+        font-size: 2.5rem;
     }
 
     @media ${device.laptop} {
-        display: none;
+        font-size: 2.5rem;
     }
 `;
 
-const RightTitleMobile = styled.h1`
+const RightTitle = styled.h1`
     color: black;
     font-family: Bitter;
     font-style: normal;
@@ -213,11 +163,15 @@ const RightTitleMobile = styled.h1`
     }
 
     @media ${device.laptop} {
-        display: none;
+        font-size: 2.5rem;
+        padding-left: 0.5rem;
+
     }
 
     @media ${device.laptopS} {
-        display: none;
+        font-size: 2.5rem;
+        padding-left: 0.5rem;
+        
     }
 `;
 
@@ -252,21 +206,16 @@ const MainText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     
     @media ${device.tablet} {
     }
 
     @media ${device.laptopS} {
-        font-size: 1.25rem;
-        line-height: 2rem;
     }
 
     @media ${device.laptop} {
-        font-size: 1.25rem;
-        line-height: 2rem;
     }
 `;
 
@@ -339,88 +288,6 @@ const RamenLogoImg = styled.img`
     }
 `;
 
-const IntroWrapperMobile = styled.div`
-
-    background: #FFFCF5;
-
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    padding: 1rem 5rem 1rem;
-
-    
-    
-    @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
-        display: none;
-    }
-
-`;
-
-const BigParagraphText = styled.p `
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 27px;
-
-    color: #872720;
-
-`
-
-const MobileStartButtonWrapper = styled.div`
-
-    display: flex;
-    justify-content: center;
-
-    @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
-        display: none;
-    }
-
-`;
-
-
-
-const MobileStartButton = styled.button`
-    background: #F6D1BD;
-    border-radius: 5px;
-
-    width: 212px;
-    height: 44px;
-    left: 85px;
-    top: 793px;
-    
-    font-family: Bitter;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #872720;
-    
-    @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
-        display: none;
-    }
-
-`;
 
 
 const Wrapper2 = styled.div`
@@ -439,14 +306,14 @@ const Home = () => (
                     </a>
                 </SBSLogo>
 
-                
+                {/*
                 <Title>
                     <LeftTitle>Food for Thought: </LeftTitle>
                     <RightTitle>Reading Week in NYC</RightTitle>
                 </Title>
-                
-                <LeftTitleMobile>Food for Thought: </LeftTitleMobile>
-                <RightTitleMobile>Reading Week in NYC</RightTitleMobile>
+                */}
+                <LeftTitle>Food for Thought: </LeftTitle>
+                <RightTitle>Reading Week in NYC</RightTitle>
 
                 <IntroWrapper>
                     <MainText>It’s that time of year we all dread: Reading Week, or as more famously known, Hell Week. 
@@ -456,35 +323,19 @@ const Home = () => (
                         Hell Week stop me. I’ll show you how I satisfy my cravings for good food while studying for 
                         finals at Columbia. This is a Hell Week in the life of a foodie. </MainText>
                 </IntroWrapper>
-
                 <Sponsered>
                     <SponseredText>Sponsered Content for </SponseredText>
                     <a href="https://ramenmuseum.nyc/" target="_blank" rel="noreferrer">
                         <RamenLogoImg src={ramenLogo} alt="Ramen Museum New York Logo" />
-                    </a>                
+                    </a>
+                    {/*<img src={ramenLogo} alt="Ramen Museum New York Logo"/> </Sponsered> */}                
+                
                 </Sponsered>
 
             </TextWrapper>
         </Wrapper1>
-
-        <IntroWrapperMobile>
-            <MainText>It's that time of year we all dread: Reading Week, or as more famously known, Hell Week. 
-                    I know how stressful it can be staying up till 3 a.m. cooped up in your room or Butler Ref 
-                    cramming months’ worth of material into a single week without having time for much else. But,                         
-                    as a self-proclaimed food enthusiast on a never-ending quest for delicious finds, I won’t let 
-                    Hell Week stop me. I’ll show you how I satisfy my cravings for good food while studying for 
-                    finals at Columbia. This is a Hell Week in the life of a foodie. 
-            </MainText>
-
-            <MobileStartButtonWrapper>
-                <MobileStartButton>Start a Foodie's Week</MobileStartButton>
-            </MobileStartButtonWrapper>
-            
-        </IntroWrapperMobile>
-
         {/*nav bar and days components below*/}
         <Wrapper2>
-            
         </Wrapper2>
 
     </>
