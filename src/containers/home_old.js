@@ -8,17 +8,14 @@ import { device } from '../device';
 
 const Wrapper1 = styled.div`
     background-image: url(https://s3-alpha-sig.figma.com/img/1a28/895d/fcc125d44e25b4b14f1c759cf674fa5b?Expires=1623024000&Signature=ccjo2IDnSKLKgNyROBKNKET4oX13O8xSzaN7viLtUuTEpD9dtnu~1fUa4L4u94Ky5WzAPTudstz0EMq3p8ANyLaUx4V9cBv22ESpOhEPZX22eEPMG6rAdllBbKE4zKj8gdvf-NZ0kqcvnOBJPC3MANcTLFSFJwh~2SP59RzKbTqlMczCVSWX33I-S~WdjWQAcm4ST3tkNgLHsyvBvkCKxeehcbS~uEReUmJHJpeIFLwPnzsp288AtiTURXZTXxB4fg2m-g4QN9S4p4V277cBBLVGKsmtar-UXwCAr0BniOdPZg1wUPDTUzrWz1tCS7AkaS8LXItAkaMLxczdnKgxUg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
-    
-
-    background-position: center;
-    height: 750px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media ${device.tablet} {
-        height: 175vh;
     }
 
     @media ${device.laptopS} {
-        background: #251282;
     }
 `;
 
@@ -27,7 +24,9 @@ const TextWrapper = styled.div`
     flex-direction: column;
 
     background-image: url(${vector});
-    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     margin: auto;
     padding: 1rem;
@@ -36,7 +35,6 @@ const TextWrapper = styled.div`
 
     @media ${device.laptopS} {
         margin-left: 0;
-        background: none;
         padding: 0;
         width: inherit;
     }
@@ -44,8 +42,7 @@ const TextWrapper = styled.div`
 
 const SBSLogo = styled.div`
     display: flex;
-    padding: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
     justify-content: left;
 
     @media ${device.laptopS} {
@@ -55,14 +52,15 @@ const SBSLogo = styled.div`
 `;
 
 const SBSLogoImg = styled.img`
-    width: 8rem;
+    width: 6rem;
 `;
 
 const Title = styled.div`
     display: flex;
     align-self: flex-start;
-
     padding-left: 5rem;
+    padding-right: 15rem;
+
 `;
 
 
@@ -71,8 +69,7 @@ const LeftTitle = styled.h1`
     font-family: Bitter;
     font-style: italic;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
     
     @media ${device.tablet} {
     }
@@ -89,8 +86,7 @@ const RightTitle = styled.h1`
     font-family: Bitter;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
 
     padding-left: 0.5rem;
 
@@ -108,9 +104,10 @@ const RightTitle = styled.h1`
 
 const IntroWrapper = styled.div`
     display: flex;
-    justify-content: center;
-    align-self: center
+    align-self: flex-start;
 
+    padding-left: 7rem;
+    padding-right: 15rem;
 
     @media ${device.tablet} {
     }
@@ -146,6 +143,7 @@ const MainText = styled.p`
 const Sponsered = styled.div`
     display: flex;
     justify-content: flex-end;
+    padding: 1rem;
 
     @media ${device.tablet} {
     }
@@ -159,7 +157,7 @@ const Sponsered = styled.div`
 `;
 
 const RamenLogoImg = styled.img`
-    width: 13rem;
+    width: 15rem;
     padding-top: 1.5rem;
 `;
 
@@ -181,6 +179,7 @@ const Home = () => (
                         <SBSLogoImg src="https://s3-alpha-sig.figma.com/img/bc56/e07b/f46e166c7aeb0aa87b7e4c776ee1bad9?Expires=1623628800&Signature=EbYyp-bniIGZfV9KGJPhKqXlLeciNVtyVY2vVGMNwbKo8Qwsfsei2hn1tqk40HEFg5A3S5s5-xVSbCPVJCdrDqnE3t6Lz2L5Pa5RBlAjSP5TfWZtFpJLZJrN4RtS1UKhlppgu93Qcs~ouPQqBwyJGPhwpRvPBfrUV4MSXQ4S0DUjsd~dqH~Ftu0~EGPuOEn7R~QUvz-pOyzfi~jfam61KoT~OznLSgUzTfOoa46pA2stB9pHvCg1c6AdsBBxlpOF2Bvf1LQTlwCgyf5YW8HGOlllsHAMmUk1QyGWUeiP0MRMkUqEdyyuwYixm9qkYRVUmdUl6RD6TlWrQ1Rl8Cj5Zg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="Spectator Brand Studios Logo" />
                     </a>
                 </SBSLogo>
+
                 <Title>
                     <LeftTitle>Food for Thought: </LeftTitle>
                     <RightTitle>Reading Week in NYC</RightTitle>
