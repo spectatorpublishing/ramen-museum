@@ -40,11 +40,12 @@ export const day_articles = [
         thursday2:`
         For lunch, I made a quick grilled cheese sandwich and hopped onto a Zoom call to meet with a study group. Working with friends is always a lot of fun for me, but after an hour it’s obvious we’re chatting a lot more than we’re studying. 
         To stay on track, I said my goodbyes and logged off the call to focus a little better. 
-        While it’s less fun to do work alone, I figured that if I worked really hard for a couple of hours, I could take some time to relax for dinnertime.
-        For dinner, I didn’t really feel like going out. After a full day on the grind, I needed something quick and easy so I decided to treat myself to some pasta from Serafina, which I ordered from UberEats. 
+        While it’s less fun to do work alone, I figured that if I worked really hard for a couple of hours, I could take some time to relax for dinnertime.`,
+
+        thursday3:`For dinner, I didn’t really feel like going out. After a full day on the grind, I needed something quick and easy so I decided to treat myself to some pasta from Serafina, which I ordered from UberEats. 
         While ordering can be really convenient, it’s a bit pricey so I usually try to only order every once and a while. 
         I place the order, and after almost an hour of waiting, it finally arrives. My pasta was very flavorful and yummy, but still arrived later than expected and not as warm as I would have liked. 
-        Normally I wouldn’t have minded, but after a day of studying I just wanted to treat myself to something nice. I ended up just reheating the pasta in the microwave, wishing I had just cooked myself something in the first place. `,
+        Normally I wouldn’t have minded, but after a day of studying I just wanted to treat myself to something nice. I ended up just reheating the pasta in the microwave, wishing I had just cooked myself something in the first place. `
     },
     {
         friday1:`Friday rolls by and I felt pretty accomplished by the amount of studying I’ve done and how I kept my wellness in check throughout the week.`,

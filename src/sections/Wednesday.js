@@ -1,11 +1,14 @@
-import {day_articles} from '../articles/articles.js';
+//imgs
 import Empty from '../images/Empty.png'
 import Man from '../images/ManEating.png'
 import TikTok from '../images/TikTok.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'
 import styled from 'styled-components'
-import { DayOfWeek,Vector,Picture, FirstLetter,Par, ButtonCont, SwipeBtn, Arrow, swipe} from '../style.js';
+//articles
+import {day_articles} from '../articles/articles.js';
+//styling
+import { DayOfWeek,Vector,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
 
 const TikTokPic=styled.img`
     display:block;
@@ -17,20 +20,20 @@ const TikTokPic=styled.img`
     }
 `
 
-const Wednesday = () => {
+const Wednesday = ({current}) => {
     return (
-        <div id="Wednesday">
-            <DayOfWeek >Wednesday</DayOfWeek>
+        <ShowDay id="Wednesday" current={current==="#Wednesday"}>
+            <DayOfWeek>Wednesday</DayOfWeek>
                         <Par><FirstLetter>{day_articles[2].wednesday1[0]}</FirstLetter>{day_articles[2].wednesday1.slice(1)}</Par>
                         <TikTokPic src={TikTok} alt="Tik Tok screenshot"/>
                         <Par>{day_articles[2].wednesday2}</Par>
                         <Picture src={Empty} alt="Placeholder image"/>
-                        <ButtonCont> 
-                            <SwipeBtn value= "Tuesday" onClick={(e)=>swipe(e.target.value)}><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn> 
-                            <SwipeBtn value= "Thursday" onClick={(e)=>swipe(e.target.value)}>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn>
-                        </ButtonCont> 
+                        <Buttons> 
+                            <a href="#Tuesday"><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn></a>
+                            <a href="#Thursday"><SwipeBtn>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></a>
+                        </Buttons> 
                 <Vector src={Man}/>
-        </div>
+        </ShowDay>
     )
 }
 

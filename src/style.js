@@ -1,15 +1,13 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 //Styled components apply to all sections
 
 //day header
 export const DayOfWeek=styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
     font-family: 'Bitter', serif;
     color: #0B0C0C;
     text-align:center;
     font-size:5vh;
     @media only screen and (max-width: 425px) {
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
         font-family:'Playfair Display', serif;
         font-weight: 800;
         text-align:left;
@@ -22,7 +20,6 @@ export const DayOfWeek=styled.h1`
 
 //paragraph
 export const Par=styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     font-family: 'Open Sans', sans-serif;
     width:65%;
     text-align:left;
@@ -32,8 +29,7 @@ export const Par=styled.div`
     color:#000000;
     padding:0.5rem;
     @media only screen and (max-width: 425px) {
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-        font-family:'Playfair Display', serif;
+        font-family: 'Open Sans', sans-serif;
     }
 `;
 
@@ -59,8 +55,10 @@ export const Picture=styled.img`
 //Capitalizes/styles first letter of pars
 export const FirstLetter=styled.span`
     @media only screen and (max-width: 425px) {
+            font-family:'Playfair Display', serif;
             color: #872720;
             font-size:5.5vh;
+
         }
 `;
 
@@ -73,8 +71,8 @@ export const LeftVectors= styled.div`
 `
 
 //Flex div that holds back/forward buttons
-export const ButtonCont= styled.div`
-    width:70%;
+export const Buttons= styled.div`
+    width:80%;
     margin:auto;
     padding:2vw;
     display:flex;
@@ -86,21 +84,49 @@ export const ButtonCont= styled.div`
 `
 //buttons
 export const SwipeBtn= styled.button`
-    @import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
     display:flex;
     align-items: center;
     background-color: #FFFCF5;
     border:none;
     color:#23967F;
-    font-weight: 600;
-    text-decoration:underline;
+    font-size:5vw;
+    text-decoration:none;
     font-family: 'Scada', sans-serif;
 `
 export const Arrow=styled.img`
-    margin:3px;
+    margin:2vw;
 `
 
-//buttons onclick function
-export const swipe=(e)=>{
-    window.location.replace(`/#${e}`)
-}
+export const VectorPar=styled.p`
+    font-family: 'Open Sans', sans-serif;
+    width:70%;
+    text-align:left;
+    margin:auto;
+    font-size:2.3vh;
+    line-height:4vh;
+    padding:0.5rem;
+    @media only screen and (max-width: 425px) {
+        margin-left:1rem;
+    }
+`
+
+//swiping motion on mobile
+const swipe=keyframes`
+    0%{
+        position:fixed;
+        transform: translateX(50px); opacity:0.6;
+    }
+    100% {
+        transform: translateX(0); opacity:1;
+    }
+`
+
+//only show active day on mobile
+export const ShowDay= styled.div`
+    @media only screen and (max-width: 425px) {
+        display:${props => props.current ? 'block': 'none'};
+        animation-name: ${swipe};
+        animation-duration: 1s;
+    }
+`
+

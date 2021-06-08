@@ -1,11 +1,14 @@
-import {day_articles} from '../articles/articles.js';
+//imgs
 import vectors from '../images/Vectors.png'
 import Empty from '../images/Empty.png'
 import Ramen from '../images/Ramen.png'
 import Food from '../images/Food.png'
-import styled from 'styled-components'
 import leftArr from '../images/LeftArrow.png'
-import { DayOfWeek,Vector, Par, Picture, FirstLetter, ButtonCont, SwipeBtn, Arrow, swipe} from '../style.js';
+import styled from 'styled-components'
+//articles
+import {day_articles} from '../articles/articles.js';
+//styling
+import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
 
 const ParContainer=styled.div`
     width:50%;
@@ -41,9 +44,9 @@ export const CroissantPic=styled.img`
     padding:2vw;
 `
 
-const Friday = () => {
+const Friday = ({current}) => {
     return (
-        <div id="Friday">
+        <ShowDay id="Friday" current={current==="#Friday"}>
             <DayOfWeek >Friday</DayOfWeek>
             <ColumnDisplay>
                 <ParContainer>
@@ -60,10 +63,10 @@ const Friday = () => {
                 <Picture src={Ramen} alt="Ramen"/>
                 <Par>{day_articles[4].friday5}</Par>
                 <Vector src={vectors}/>
-                <ButtonCont> 
-                    <SwipeBtn value= "Thursday" onClick={(e)=>swipe(e.target.value)}><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn>
-                </ButtonCont>  
-        </div>
+                <Buttons> 
+                    <a href="#Thursday"><SwipeBtn ><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn></a>
+                </Buttons>  
+        </ShowDay>
     )
 }
 
