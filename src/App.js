@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Monday from './sections/Monday'
+import Tuesday from './sections/Tuesday'
+import Wednesday from './sections/Wednesday'
+import Thursday from './sections/Thursday'
+import Friday from './sections/Friday'
+import {useState} from 'react'
+
 
 function App() {
+  //update active day for mobile, and swipe
+  const [current, setCurrent]= useState("/");
+
+  window.addEventListener("hashchange", () => mobileSwipe());
+  const mobileSwipe=()=>{
+    let hash=window.location.hash
+    setCurrent(hash)
+    window.location.replace(hash)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Monday current={current} />
+      <Tuesday current={current} />
+      <Wednesday current={current} />
+      <Thursday current={current} />
+      <Friday current={current} />
     </div>
   );
 }
