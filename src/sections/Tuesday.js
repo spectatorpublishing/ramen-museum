@@ -1,7 +1,7 @@
 //imgs
 import riverside from '../images/Riverside.png'
 import ChelseaMarket from '../images/ChelseaMarket.png'
-import LanternDesign from '../images/LanternDesign.png'
+import LanternDesign from '../images/lanternDesign.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'
 //articles

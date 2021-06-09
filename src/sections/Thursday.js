@@ -1,6 +1,6 @@
 //imgs
 import MatchLatte from '../images/MatchaLatte.png'
-import vectors from '../images/Vectors.png'
+import vectors from '../images/vectors.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'
 //articles

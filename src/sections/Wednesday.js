@@ -1,6 +1,6 @@
 //imgs
 import Empty from '../images/Empty.png'
-import Man from '../images/ManEating.png'
+import Man from '../images/manEating.png'
 import TikTok from '../images/TikTok.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'

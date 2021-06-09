@@ -1,5 +1,5 @@
 //imgs
-import vectors from '../images/Vectors.png'
+import vectors from '../images/vectors.png'
 import verVectors from '../images/verticalVectors.png'
 import leftArr from '../images/LeftArrow.png'
 import rightArr from '../images/RightArrow.png'

@@ -1,5 +1,5 @@
 //imgs
-import vectors from '../images/Vectors.png'
+import vectors from '../images/vectors.png'
 import Empty from '../images/Empty.png'
 import Ramen from '../images/Ramen.png'
 import Food from '../images/Food.png'
