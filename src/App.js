@@ -1,14 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Home from './containers/Home';
+import './App.css'
+import Home from './sections/Home';
 import Monday from './sections/Monday'
 import Tuesday from './sections/Tuesday'
 import Wednesday from './sections/Wednesday'
 import Thursday from './sections/Thursday'
 import Friday from './sections/Friday'
+import Nav from './components/Nav'
 import {useState} from 'react'
+import styled from 'styled-components'
 
+const DesktopNav=styled.div`
+  @media only screen and (max-width: 425px) {
+      display: none;
+    }
+`
 
 function App() {
   //update active day for mobile, and swipe
@@ -22,20 +29,15 @@ function App() {
   }
   
   return (
-    <>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route exact path='/' component={Home} />
-        </Switch>
-      </Router>
       <div>
+        <Home />
+        <div id="nav"><Nav /></div>
         <Monday current={current} />
         <Tuesday current={current} />
         <Wednesday current={current} />
         <Thursday current={current} />
         <Friday current={current} />
       </div>
-    </>
   );
 
 }

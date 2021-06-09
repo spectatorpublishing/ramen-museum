@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import '../App.css'
 
 function Nav() {
     
@@ -16,19 +17,19 @@ function Nav() {
 
     return(
         
-        <weekday>
+        <div className="weekday">
 
-        <a href="#dd">Monday</a>
+        <a href="#Monday">Monday</a>
         
-        <a href="#tuesday">Tuesday</a>
+        <a href="#Tuesday">Tuesday</a>
         
-        <a href="#wednesday">Wednesday</a>
+        <a href="#Wednesday">Wednesday</a>
 
-        <a href="#thursday">Thursday</a>
+        <a href="#Thursday">Thursday</a>
 
-        <a href="#friday">Friday</a>
+        <a href="#Friday">Friday</a>
 
-        </weekday>
+        </div>
     )
     
 }

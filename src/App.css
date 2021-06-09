@@ -1,32 +1,32 @@
-weekday {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: Bitter;
-  color: #FBFBFB;
-  background: #A05C50;
+.weekday {
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-family: Bitter;
+	color: #fbfbfb;
+	background: #a05c50;
 }
 
-#nav a{
-  text-decoration: none;
-  color: #FBFBFB;
-  font-weight: 500;
-  font-style: italic;
-  line-height: 32.4px;
-  font-size: 27px;
+#nav a {
+	text-decoration: none;
+	color: #fbfbfb;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 32.4px;
+	font-size: 27px;
 }
 
-#nav .active{
-  color: white;
-  font-weight: 700;
-  line-height: 36px;
-  font-size: 30px;
-  font-style: normal;
+#nav .active {
+	color: white;
+	font-weight: 700;
+	line-height: 36px;
+	font-size: 30px;
+	font-style: normal;
 }
 
-.sticky{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }

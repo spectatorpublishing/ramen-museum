@@ -12,82 +12,48 @@ import { device } from '../device';
 
 const Wrapper1 = styled.div`
     background-image: url(${foodBackgroundMobile});
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
         background-image: url(${foodBackground});
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    @media ${device.laptopS} {
-        background-image: url(${foodBackground});
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 `;
 
 const TextWrapper = styled.div`
-
+    display: flex;
+    flex-direction: column;
     background-image: url(${vectorMobile});
-
     background-size: cover;
     background-position: center;
 
 
-    @media ${device.laptop} {
-        display: flex;
-        flex-direction: column;
-    
+    @media ${device.tablet} {
         background-image: url(${vector});
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
 
-    }
-
-    @media ${device.laptopS} {
-        display: flex;
-        flex-direction: column;
-    
-        background-image: url(${vector});
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
     }
 `;
 
 const SBSLogo = styled.div`
     background: #FFFCF5;
-    
     display: flex;
     padding: 1rem;
     justify-content: center;
 
-    @media ${device.laptopS} {
+    @media ${device.tablet} {
         background: none;
-        
-        display: flex;
         padding: 2rem;
         justify-content: left;
     }
 
-    @media ${device.laptop} {
-        background: none;
-        
-        display: flex;
-        padding: 2rem;
-        justify-content: left;
-    }
 `;
 
 const SBSLogoImg = styled.img`
@@ -96,19 +62,8 @@ const SBSLogoImg = styled.img`
 
 const Title = styled.div`
     display: none; 
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 0rem;
     
-    @media ${device.laptop} {
-        display: flex;
-        align-self: flex-start;
-        padding-left: 5rem;
-        padding-right: 15rem;
-        padding-top: 6rem;
-    }
-
-    @media ${device.laptops} {
+    @media ${device.tablet} {
         display: flex;
         align-self: flex-start;
         padding-left: 5rem;
@@ -121,20 +76,8 @@ const Title = styled.div`
 const LeftTitle = styled.h1`
     display: none;    
 
-    @media ${device.laptop} {
+    @media ${device.tablet} {
         display: flex;    
-
-        color: #A05C50;
-        font-family: Bitter;
-        font-style: italic;
-        font-weight: bold;
-
-        font-size: 2.5rem;
-    }
-
-    @media ${device.laptopS} {
-        display: flex;    
-
         color: #A05C50;
         font-family: Bitter;
         font-style: italic;
@@ -148,9 +91,8 @@ const LeftTitle = styled.h1`
 const RightTitle = styled.h1`
     display: none;    
 
-    @media ${device.laptop} {
+    @media ${device.tablet} {
         display: flex;    
-
         color: black;
         font-family: Bitter;
         font-style: normal;
@@ -160,17 +102,6 @@ const RightTitle = styled.h1`
         padding-left: 0.5rem;
     }
 
-    @media ${device.laptopS} {
-        display: flex;    
-
-        color: black;
-        font-family: Bitter;
-        font-style: normal;
-        font-weight: 500;
-        
-        font-size: 2.5rem;
-        padding-left: 0.5rem;
-    }
 `;
 
 const LeftTitleMobile = styled.h1`
@@ -185,15 +116,9 @@ const LeftTitleMobile = styled.h1`
     padding-left: 1rem;
 
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptopS} {
         display: none;
     }
 
-    @media ${device.laptop} {
-        display: none;
-    }
 `;
 
 const RightTitleMobile = styled.h1`
@@ -210,13 +135,6 @@ const RightTitleMobile = styled.h1`
 
 
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
         display: none;
     }
 `;
@@ -225,23 +143,12 @@ const IntroWrapper = styled.div`
     display: none;
     
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptopS} {
         display: flex;
         align-self: flex-start;
     
         padding-left: 7rem;
         padding-right: 15rem;
        
-    }
-
-    @media ${device.laptop} {
-        display: flex;
-        align-self: flex-start;
-    
-        padding-left: 7rem;
-        padding-right: 15rem;
     }
 `;
 
@@ -255,16 +162,8 @@ const MainText = styled.p`
 
     font-size: 1rem;
     line-height: 1.5rem;
-    
+
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptopS} {
-        font-size: 1.25rem;
-        line-height: 2rem;
-    }
-
-    @media ${device.laptop} {
         font-size: 1.25rem;
         line-height: 2rem;
     }
@@ -279,20 +178,9 @@ const Sponsered = styled.div`
         
 
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptopS} {
         display: flex;
         justify-content: flex-end;
         padding: 1rem;    
-       
-    }
-
-    @media ${device.laptop} {
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-    
     }
 `;
 
@@ -307,14 +195,6 @@ const SponseredText = styled.p`
     line-height: 2rem;
     
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-
-    @media ${device.laptopS} {
         font-size: 1.5rem;
         line-height: 2rem;
     }
@@ -348,16 +228,7 @@ const IntroWrapperMobile = styled.div`
     align-self: flex-start;
     padding: 1rem 5rem 1rem;
 
-    
-    
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
         display: none;
     }
 
@@ -380,13 +251,6 @@ const MobileStartButtonWrapper = styled.div`
     justify-content: center;
 
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        display: none;
-    }
-
-    @media ${device.laptopS} {
         display: none;
     }
 
@@ -410,22 +274,8 @@ const MobileStartButton = styled.button`
     color: #872720;
     
     @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
         display: none;
     }
-
-    @media ${device.laptopS} {
-        display: none;
-    }
-
-`;
-
-
-const Wrapper2 = styled.div`
-    background: black;
-    height: 150vh;
 
 `;
 
@@ -454,7 +304,8 @@ const Home = () => (
                         cramming months’ worth of material into a single week without having time for much else. But, 
                         as a self-proclaimed food enthusiast on a never-ending quest for delicious finds, I won’t let 
                         Hell Week stop me. I’ll show you how I satisfy my cravings for good food while studying for 
-                        finals at Columbia. This is a Hell Week in the life of a foodie. </MainText>
+                        finals at Columbia. This is a Hell Week in the life of a foodie. 
+                        </MainText>
                 </IntroWrapper>
 
                 <Sponsered>
@@ -477,15 +328,10 @@ const Home = () => (
             </MainText>
 
             <MobileStartButtonWrapper>
-                <MobileStartButton>Start a Foodie's Week</MobileStartButton>
+                <a href="#Monday"><MobileStartButton>Start a Foodie's Week</MobileStartButton></a>
             </MobileStartButtonWrapper>
             
         </IntroWrapperMobile>
-
-        {/*nav bar and days components below*/}
-        <Wrapper2>
-            
-        </Wrapper2>
 
     </>
 );
