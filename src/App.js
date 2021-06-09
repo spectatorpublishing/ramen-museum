@@ -1,3 +1,7 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './containers/Home';
 import Monday from './sections/Monday'
 import Tuesday from './sections/Tuesday'
 import Wednesday from './sections/Wednesday'
@@ -18,13 +22,20 @@ function App() {
   }
   
   return (
-    <div>
-      <Monday current={current} />
-      <Tuesday current={current} />
-      <Wednesday current={current} />
-      <Thursday current={current} />
-      <Friday current={current} />
-    </div>
+    <>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+      </Router>
+      <div>
+        <Monday current={current} />
+        <Tuesday current={current} />
+        <Wednesday current={current} />
+        <Thursday current={current} />
+        <Friday current={current} />
+      </div>
+    </>
   );
 
 }
