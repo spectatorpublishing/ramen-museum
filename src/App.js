@@ -26,6 +26,7 @@ function App() {
       <Friday current={current} />
     </div>
   );
+
 }
 
 export default App;
