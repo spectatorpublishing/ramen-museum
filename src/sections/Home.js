@@ -9,6 +9,7 @@ import foodBackgroundMobile from '../images/top_background_mobile.png'
 import vectorMobile from '../images/top_overlay_mobile.png'
 
 import { device } from '../device';
+import Dropdown from './Dropdown';
 
 const Wrapper1 = styled.div`
     background-image: url(${foodBackgroundMobile});
@@ -287,8 +288,10 @@ const Home = () => (
                     <a href="https://www.columbiaspectator.com/sponsored-content/" target="_blank" rel="noreferrer">
                         <SBSLogoImg src="https://s3-alpha-sig.figma.com/img/bc56/e07b/f46e166c7aeb0aa87b7e4c776ee1bad9?Expires=1623628800&Signature=EbYyp-bniIGZfV9KGJPhKqXlLeciNVtyVY2vVGMNwbKo8Qwsfsei2hn1tqk40HEFg5A3S5s5-xVSbCPVJCdrDqnE3t6Lz2L5Pa5RBlAjSP5TfWZtFpJLZJrN4RtS1UKhlppgu93Qcs~ouPQqBwyJGPhwpRvPBfrUV4MSXQ4S0DUjsd~dqH~Ftu0~EGPuOEn7R~QUvz-pOyzfi~jfam61KoT~OznLSgUzTfOoa46pA2stB9pHvCg1c6AdsBBxlpOF2Bvf1LQTlwCgyf5YW8HGOlllsHAMmUk1QyGWUeiP0MRMkUqEdyyuwYixm9qkYRVUmdUl6RD6TlWrQ1Rl8Cj5Zg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="Spectator Brand Studios Logo" />
                     </a>
-                </SBSLogo>
 
+                    <Dropdown/>
+                </SBSLogo>
+                
                 
                 <Title>
                     <LeftTitle>Food for Thought: </LeftTitle>

@@ -7,9 +7,12 @@ import Tuesday from './sections/Tuesday'
 import Wednesday from './sections/Wednesday'
 import Thursday from './sections/Thursday'
 import Friday from './sections/Friday'
-import Nav from './components/Nav'
 import {useState} from 'react'
 import styled from 'styled-components'
+import Monav from './sections/Monav';
+import Webnav from './sections/Webnav';
+import $ from 'jquery';
+
 
 const DesktopNav=styled.div`
   @media only screen and (max-width: 425px) {
@@ -27,11 +30,18 @@ function App() {
     setCurrent(hash)
     window.location.replace(hash)
   }
+
+  var items = $("a");
+
+  items.on("click",function(){
+    items.removeClass("active");
+    $(this).toggleClass("active");
+  });
   
   return (
       <div>
-        <Home />
-        <div id="nav"><Nav /></div>
+        <Home/>
+        <Webnav />
         <Monday current={current} />
         <Tuesday current={current} />
         <Wednesday current={current} />
