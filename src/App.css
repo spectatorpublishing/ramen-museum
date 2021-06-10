@@ -31,7 +31,19 @@
 	top: 0;
 } */
 
+.navbutt{
+	padding: 0;
+	border: none;
+	background: none;
+	position: absolute;
+	left: 87.49%;
+	right: 6.25%;
+	top: 3.97%;
+	bottom: 94.43%;	
+}
+
 .menu {
+	background-color: white;
 	border-radius: 8px;
 	position: absolute;
 	top: 60px;

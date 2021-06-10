@@ -2,24 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 import {useState, useRef} from 'react'
 import Monav from './Monav';
+import { Sling as Hamburger } from 'hamburger-react'
+
 
 
 const Dropdown = () => {
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
+    const [isOpen, setOpen] = useState(false)
     const onClick = () => setIsActive(!isActive);
+
+    const closeMenu = () => {
+        setIsActive(!isActive)
+        setOpen(false)
+
+    }
   
     return (
+
         <div className="menu-container">
-            <button onClick={onClick}>
-                <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/df/df7789f313571604c0e4fb82154f7ee93d9989c6.jpg" alt="User avatar" />
+            <button class = "navbutt" onClick={onClick}>
+            <Hamburger color = "#872720" toggled={isOpen} toggle={setOpen}/>
             </button>  
-            <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
+            <nav onClick = {onClick} ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`} >
                 <div>
-                    <Monav/>
+                    <Monav close = {closeMenu}></Monav>
                 </div>
             </nav>
         </div>
+
     );
 };
 

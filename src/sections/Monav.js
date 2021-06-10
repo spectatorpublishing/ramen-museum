@@ -31,14 +31,14 @@ const Navdiv = styled.div`
 
 
 
-const Monav = ({current}) => (
+const Monav = ({close}) => (
 
    
 
-        <Navdiv id>   
+        <Navdiv onClick= {close} exact>   
 
             <a>HOME</a>
-            <a href= "#Monday">MONDAY</a>
+            <a href= "#Monday" >MONDAY</a>
             <a href= "#Tuesday">TUESDAY</a>
             <a href= "#Wednesday">WEDNESDAY</a>
             <a href= "#Thursday">THURSDAY</a>
