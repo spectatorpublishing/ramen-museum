@@ -39,7 +39,7 @@ function App() {
   
   return (
       <div>
-        <Home/>
+        <Home current={current} />
         <Webnav />
         <Monday current={current} />
         <Tuesday current={current} />

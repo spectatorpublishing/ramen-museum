@@ -38,8 +38,7 @@
 	position: absolute;
 	left: 87.49%;
 	right: 6.25%;
-	top: 3.97%;
-	bottom: 94.43%;	
+	top: 1rem;
 }
 
 .menu {
@@ -64,8 +63,8 @@
   
 
   .menu-container {
+	/* display: none; */
 	@media only screen and (min-width: 425px){
-	position: relative;
+		position: relative;
 	}
-	display: no;
   }

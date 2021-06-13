@@ -37,7 +37,7 @@ const Monav = ({close}) => (
 
         <Navdiv onClick= {close} exact>   
 
-            <a>HOME</a>
+            <a href="/">HOME</a>
             <a href= "#Monday" >MONDAY</a>
             <a href= "#Tuesday">TUESDAY</a>
             <a href= "#Wednesday">WEDNESDAY</a>

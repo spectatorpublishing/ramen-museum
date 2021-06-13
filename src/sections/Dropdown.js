@@ -15,7 +15,6 @@ const Dropdown = () => {
     const closeMenu = () => {
         setIsActive(!isActive)
         setOpen(false)
-
     }
   
     return (

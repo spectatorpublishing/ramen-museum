@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 
 const Webdiv = styled.div`
+    display: none;
 
-    @media only screen and (min-width: 425px){  
+    @media only screen and (min-width: 426px){  
         display: flex;
         flex-direction: row;
         text-align: center;

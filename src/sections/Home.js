@@ -331,7 +331,7 @@ const Home = ({current}) => (
                 </IntroWrapper>
 
                 <Sponsered>
-                    <SponseredText>Sponsered Content for </SponseredText>
+                    <SponseredText>Sponsored Content for </SponseredText>
                     <a href="https://ramenmuseum.nyc/" target="_blank" rel="noreferrer">
                         <RamenLogoImg src={ramenLogo} alt="Ramen Museum New York Logo" />
                     </a>                

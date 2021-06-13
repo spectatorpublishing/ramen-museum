@@ -1,4 +1,6 @@
 import styled, {keyframes} from 'styled-components'
+import { device } from './device';
+
 //Styled components apply to all sections
 
 //day header
@@ -133,4 +135,19 @@ export const ShowDay= styled.div`
         animation-duration: 1s;
     }
 `
+
+export const SBSLogo = styled.div`
+    background: #FFFCF5;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+
+    @media ${device.tablet} {
+        display: none;
+    }
+`;
+
+export const SBSLogoImg = styled.img`
+    width: 6rem;
+`;
 
