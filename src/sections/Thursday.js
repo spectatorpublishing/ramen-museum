@@ -6,7 +6,7 @@ import rightArr from '../images/RightArrow.png'
 //articles
 import {day_articles} from '../articles/articles.js'
 //styling
-import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
+import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink} from '../style.js';
 
 const Thursday = ({current}) => {
     return (
@@ -17,8 +17,8 @@ const Thursday = ({current}) => {
                         <Par>{day_articles[3].thursday2}</Par>
                         <Par>{day_articles[3].thursday3}</Par>
                         <Buttons> 
-                            <a href="#Wednesday" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>WEDNESDAY</SwipeBtn></a>
-                            <a href="#Friday"><SwipeBtn >FRIDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></a>
+                            <BtnLink href="#Wednesday" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>WEDNESDAY</SwipeBtn></BtnLink>
+                            <BtnLink href="#Friday"><SwipeBtn >FRIDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>
                         </Buttons>  
             <Vector src={vectors}/>
         </ShowDay>

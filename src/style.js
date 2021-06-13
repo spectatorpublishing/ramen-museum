@@ -88,13 +88,17 @@ export const SwipeBtn= styled.button`
     align-items: center;
     background-color: #FFFCF5;
     border:none;
-    color:#23967F;
+    color:#F4A074;
     font-size:5vw;
     text-decoration:none;
     font-family: 'Scada', sans-serif;
 `
+export const BtnLink=styled.a`
+    text-decoration: none;
+`
 export const Arrow=styled.img`
     margin:2vw;
+    color:#F4A074;
 `
 
 export const VectorPar=styled.p`

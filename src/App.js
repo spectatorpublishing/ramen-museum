@@ -28,7 +28,6 @@ function App() {
   const mobileSwipe=()=>{
     let hash=window.location.hash
     setCurrent(hash)
-    window.location.replace(hash)
   }
 
   var items = $("a");
