@@ -66,5 +66,15 @@ export const day_articles = [
         As we sit down to enjoy a restaurant-quality ramen, I am very happy I got to spend time with my roommates before finals week approaches. 
         As our tummies fill with the warm broth of the ramen, I’m grateful that tonight’s cooking has brought us closer together as not only a living unit, but also as friends.
         `,
+    },
+    {
+        intro: `It’s that time of year we all dread: Reading Week, or as more famously known, Hell Week. 
+        I know how stressful it can be staying up till 3 a.m. cooped up in your room or Butler Ref 
+        cramming months’ worth of material into a single week without having time for much else. But, 
+        as a self-proclaimed food enthusiast on a never-ending quest for delicious finds, I won’t let 
+        Hell Week stop me. I’ll show you how I satisfy my cravings for good food while studying for 
+        finals at Columbia. This is a Hell Week in the life of a foodie.`,
+    
     }
+
 ];
