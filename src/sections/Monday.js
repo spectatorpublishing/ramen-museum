@@ -7,7 +7,7 @@ import styled from 'styled-components';
 //articles
 import {day_articles} from '../articles/articles.js';
 //styling
-import { DayOfWeek, Vector, FirstLetter, LeftVectors, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
+import { DayOfWeek, Vector, FirstLetter, LeftVectors, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink} from '../style.js';
 
 export const VerVector= styled.img`
     width:12%;    
@@ -40,8 +40,8 @@ const Monday = ({current}) => {
                         <VectorPar>{day_articles[0].monday2}</VectorPar>
                         <VectorPar>{day_articles[0].monday3}</VectorPar>
                         <Buttons style={{margin:'5vw'}}> 
-                            <a href="/" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/> HOME</SwipeBtn></a>
-                            <a href="#Tuesday"><SwipeBtn>TUESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></a>
+                            <BtnLink href="/" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/> HOME</SwipeBtn></BtnLink>
+                            <BtnLink href="#Tuesday"><SwipeBtn>TUESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>
                         </Buttons>  
                     </div>
                 </LeftVectors>
