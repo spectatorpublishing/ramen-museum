@@ -8,8 +8,14 @@ import ramenLogo from '../images/ramen_museum_logo.png'
 import foodBackgroundMobile from '../images/top_background_mobile.png'
 import vectorMobile from '../images/top_overlay_mobile.png'
 
+import verVectors from '../images/verticalVectors.png'
+
 import { device } from '../device';
 import Dropdown from './Dropdown';
+
+import {FirstLetter, LeftVectors} from '../style.js';
+import {day_articles} from '../articles/articles.js';
+
 
 const Wrapper1 = styled.div`
     background-image: url(${foodBackgroundMobile});
@@ -32,7 +38,6 @@ const TextWrapper = styled.div`
     background-image: url(${vectorMobile});
     background-size: cover;
     background-position: center;
-
 
     @media ${device.tablet} {
         background-image: url(${vector});
@@ -227,24 +232,12 @@ const IntroWrapperMobile = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    padding: 1rem 5rem 1rem;
 
     @media ${device.tablet} {
         display: none;
     }
 
 `;
-
-const BigParagraphText = styled.p `
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 27px;
-
-    color: #872720;
-
-`
 
 const MobileStartButtonWrapper = styled.div`
 
@@ -256,7 +249,6 @@ const MobileStartButtonWrapper = styled.div`
     }
 
 `;
-
 
 
 const MobileStartButton = styled.button`
@@ -279,6 +271,26 @@ const MobileStartButton = styled.button`
     }
 
 `;
+
+export const VerVector= styled.img`
+    width:12%;    
+    @media only screen and (min-width: 426px) {
+        display: none;
+    }
+`
+
+export const VectorPar=styled.p`
+    font-family: 'Open Sans', sans-serif;
+    width:70%;
+    text-align:left;
+    margin:auto;
+    font-size:2.3vh;
+    line-height:4vh;
+    padding:0.5rem;
+    @media only screen and (max-width: 425px) {
+        margin-left:1rem;
+    }
+`
 
 //only show active day on mobile
 export const Mobile= styled.div`
@@ -329,19 +341,18 @@ const Home = ({current}) => (
         </Wrapper1>
 
         <IntroWrapperMobile>
-            <MainText>It's that time of year we all dread: Reading Week, or as more famously known, Hell Week. 
-                    I know how stressful it can be staying up till 3 a.m. cooped up in your room or Butler Ref 
-                    cramming months’ worth of material into a single week without having time for much else. But,                         
-                    as a self-proclaimed food enthusiast on a never-ending quest for delicious finds, I won’t let 
-                    Hell Week stop me. I’ll show you how I satisfy my cravings for good food while studying for 
-                    finals at Columbia. This is a Hell Week in the life of a foodie. 
-            </MainText>
-
-            <MobileStartButtonWrapper>
-                <a href="#Monday"><MobileStartButton>Start a Foodie's Week</MobileStartButton></a>
-            </MobileStartButtonWrapper>
-            
+            <LeftVectors>
+                <VerVector src={verVectors} alt="Vertical wavy design"/>
+                <div>
+                    <VectorPar><FirstLetter>{day_articles[5].intro[0]}</FirstLetter>{day_articles[5].intro.slice(1)}</VectorPar>
+                    <MobileStartButtonWrapper>
+                        <a href="#Monday">
+                            <MobileStartButton>Start a Foodie's Week</MobileStartButton></a>
+                    </MobileStartButtonWrapper>      
+                </div>
+            </LeftVectors>
         </IntroWrapperMobile>
+
         </Mobile>
     </>
 );
