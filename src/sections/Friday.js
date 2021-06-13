@@ -8,7 +8,7 @@ import styled from 'styled-components'
 //articles
 import {day_articles} from '../articles/articles.js';
 //styling
-import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
+import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink} from '../style.js';
 
 const ParContainer=styled.div`
     width:50%;
@@ -64,7 +64,7 @@ const Friday = ({current}) => {
                 <Par>{day_articles[4].friday5}</Par>
                 <Vector src={vectors}/>
                 <Buttons> 
-                    <a href="#Thursday"><SwipeBtn ><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn></a>
+                    <BtnLink href="#Thursday"><SwipeBtn ><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn></BtnLink>
                 </Buttons>  
         </ShowDay>
     )

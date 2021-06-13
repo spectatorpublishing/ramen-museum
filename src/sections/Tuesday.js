@@ -7,7 +7,7 @@ import rightArr from '../images/RightArrow.png'
 //articles
 import {day_articles} from '../articles/articles.js';
 //styling
-import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
+import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink} from '../style.js';
 
 const Tuesday = ({current}) => {
     return (
@@ -19,8 +19,8 @@ const Tuesday = ({current}) => {
                         <Par>{day_articles[1].tuesday3} </Par>
                         <Picture src={ChelseaMarket} alt="Chelsea Market"/>
                         <Buttons> 
-                            <a href="#Monday" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>MONDAY</SwipeBtn></a>
-                            <a href="#Wednesday"><SwipeBtn>WEDNESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></a>
+                            <BtnLink href="#Monday" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>MONDAY</SwipeBtn></BtnLink>
+                            <BtnLink href="#Wednesday"><SwipeBtn>WEDNESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>
                         </Buttons>  
                 <Vector src={LanternDesign}/>
         </ShowDay>

@@ -8,14 +8,14 @@ import styled from 'styled-components'
 //articles
 import {day_articles} from '../articles/articles.js';
 //styling
-import { DayOfWeek,Vector,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay} from '../style.js';
+import { DayOfWeek,Vector,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink} from '../style.js';
 
 const TikTokPic=styled.img`
     display:block;
     margin:auto;
     padding:2vw;
     width:25vw;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 768px) {
         width:40vw;
     }
 `
@@ -29,8 +29,8 @@ const Wednesday = ({current}) => {
                         <Par>{day_articles[2].wednesday2}</Par>
                         <Picture src={Empty} alt="Placeholder image"/>
                         <Buttons> 
-                            <a href="#Tuesday"><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn></a>
-                            <a href="#Thursday"><SwipeBtn>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></a>
+                            <BtnLink href="#Tuesday"><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn></BtnLink>
+                            <BtnLink href="#Thursday"><SwipeBtn>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>
                         </Buttons> 
                 <Vector src={Man}/>
         </ShowDay>
