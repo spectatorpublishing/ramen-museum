@@ -31,7 +31,7 @@ export const VectorPar=styled.p`
 
 const Monday = ({current}) => {
     return (
-            <ShowDay id="Monday" current={current==="#Monday"|| current==="/"}>
+            <ShowDay id="Monday" current={current==="#Monday"}>
                 <DayOfWeek>Monday</DayOfWeek> 
                 <LeftVectors>
                     <VerVector src={verVectors} alt="Vertical wavy design"/>

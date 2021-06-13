@@ -25,12 +25,11 @@ function App() {
   const mobileSwipe=()=>{
     let hash=window.location.hash
     setCurrent(hash)
-    window.location.replace(hash)
   }
   
   return (
       <div>
-        <Home />
+        <Home current={current}/>
         <div id="nav"><Nav /></div>
         <Monday current={current} />
         <Tuesday current={current} />

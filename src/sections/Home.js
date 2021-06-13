@@ -279,9 +279,17 @@ const MobileStartButton = styled.button`
 
 `;
 
-const Home = () => (
+//only show active day on mobile
+export const Mobile= styled.div`
+    @media only screen and (max-width: 425px) {
+        display:${props => props.current ? 'block': 'none'};
+    }
+`
+
+const Home = ({current}) => (
     <>
-        <Wrapper1 id="home">
+     <Mobile id="/" current={current==="/"}>
+        <Wrapper1 >
             <TextWrapper>
                 <SBSLogo>
                     <a href="https://www.columbiaspectator.com/sponsored-content/" target="_blank" rel="noreferrer">
@@ -332,7 +340,7 @@ const Home = () => (
             </MobileStartButtonWrapper>
             
         </IntroWrapperMobile>
-
+        </Mobile>
     </>
 );
 
