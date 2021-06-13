@@ -64,8 +64,10 @@
   
 
   .menu-container {
+	display: none;
+	
 	@media only screen and (min-width: 425px){
 	position: relative;
 	}
-	display: no;
+	
   }
