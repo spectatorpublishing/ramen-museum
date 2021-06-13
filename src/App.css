@@ -1,4 +1,4 @@
-.weekday {
+/* .weekday {
 	display: flex;
 	text-align: center;
 	flex-direction: row;
@@ -11,16 +11,16 @@
 #nav a {
 	text-decoration: none;
 	color: #fbfbfb;
-	font-weight: 500;
+	font-weight: 200;
 	font-style: italic;
-	line-height: 32.4px;
-	font-size: 27px;
+	line-height: 79px;
+	font-size: 25px;
 }
 
 #nav .active {
 	color: white;
 	font-weight: 700;
-	line-height: 36px;
+	line-height: 79px;
 	font-size: 30px;
 	font-style: normal;
 }
@@ -29,4 +29,43 @@
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+} */
+
+.navbutt{
+	padding: 0;
+	border: none;
+	background: none;
+	position: absolute;
+	left: 87.49%;
+	right: 6.25%;
+	top: 3.97%;
+	bottom: 94.43%;	
 }
+
+.menu {
+	background-color: white;
+	border-radius: 8px;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	width: 100%;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-20px);
+	transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
+  
+  .menu.active {
+	opacity: 1;;
+	visibility: visible;
+	transform: translateY(0);
+  }
+  
+
+  .menu-container {
+	@media only screen and (min-width: 425px){
+	position: relative;
+	}
+	display: no;
+  }
