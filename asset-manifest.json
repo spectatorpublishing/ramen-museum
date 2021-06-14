@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50cac613.chunk.css",
+    "main.js": "/static/js/main.46e02a0c.chunk.js",
+    "main.js.map": "/static/js/main.46e02a0c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0958c587.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0958c587.js.map",
+    "static/js/2.50dad860.chunk.js": "/static/js/2.50dad860.chunk.js",
+    "static/js/2.50dad860.chunk.js.map": "/static/js/2.50dad860.chunk.js.map",
+    "static/js/3.e2014b58.chunk.js": "/static/js/3.e2014b58.chunk.js",
+    "static/js/3.e2014b58.chunk.js.map": "/static/js/3.e2014b58.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.50cac613.chunk.css.map": "/static/css/main.50cac613.chunk.css.map",
+    "static/js/2.50dad860.chunk.js.LICENSE.txt": "/static/js/2.50dad860.chunk.js.LICENSE.txt",
+    "static/media/ChelseaMarket.f8a4470f.png": "/static/media/ChelseaMarket.f8a4470f.png",
+    "static/media/Food.d6ec4ddb.png": "/static/media/Food.d6ec4ddb.png",
+    "static/media/MatchaLatte.6518cf51.png": "/static/media/MatchaLatte.6518cf51.png",
+    "static/media/Ramen.0b5d02c4.png": "/static/media/Ramen.0b5d02c4.png",
+    "static/media/Riverside.9948ca92.png": "/static/media/Riverside.9948ca92.png",
+    "static/media/TikTok.b3e63d30.png": "/static/media/TikTok.b3e63d30.png",
+    "static/media/lanternDesign.3f212557.png": "/static/media/lanternDesign.3f212557.png",
+    "static/media/manEating.189a33d2.png": "/static/media/manEating.189a33d2.png",
+    "static/media/ramen_museum_logo.b4199c2e.png": "/static/media/ramen_museum_logo.b4199c2e.png",
+    "static/media/top_background.122290dc.png": "/static/media/top_background.122290dc.png",
+    "static/media/top_background_mobile.8bd3005c.png": "/static/media/top_background_mobile.8bd3005c.png",
+    "static/media/top_overlay_vector.aa1ae6fd.png": "/static/media/top_overlay_vector.aa1ae6fd.png",
+    "static/media/vectors.f76d30dd.png": "/static/media/vectors.f76d30dd.png",
+    "static/media/verticalVectors.923e1c7e.png": "/static/media/verticalVectors.923e1c7e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0958c587.js",
+    "static/js/2.50dad860.chunk.js",
+    "static/css/main.50cac613.chunk.css",
+    "static/js/main.46e02a0c.chunk.js"
+  ]
+}
