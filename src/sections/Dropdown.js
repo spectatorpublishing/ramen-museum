@@ -4,7 +4,13 @@ import {useState, useRef} from 'react'
 import Monav from './Monav';
 import { Sling as Hamburger } from 'hamburger-react'
 
+const Wrap = styled.div`
+    display: block;
 
+    @media only screen and (min-width: 500px) {
+		display: none;
+	}
+`;
 
 const Dropdown = () => {
     const dropdownRef = useRef(null);
@@ -18,7 +24,7 @@ const Dropdown = () => {
     }
   
     return (
-
+        <Wrap>
         <div className="menu-container">
             <button class = "navbutt" onClick={onClick}>
             <Hamburger color = "#872720" toggled={isOpen} toggle={setOpen}/>
@@ -29,7 +35,7 @@ const Dropdown = () => {
                 </div>
             </nav>
         </div>
-
+        </Wrap>
     );
 };
 
