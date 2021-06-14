@@ -1,5 +1,12 @@
 # Ramen Museum SBS
 
+### TODO
+
+- Standardize mobile sizes
+- Fix scroll to id functionality
+- Add in final images
+- Fix scroll to location on mobile
+
 <img width="341" alt="Screen Shot 2021-05-22 at 4 26 42 PM" src="https://user-images.githubusercontent.com/16248113/119239919-80d63d80-bb1a-11eb-94bb-5a8b43633e60.png">
 
 Link to figma: https://www.figma.com/file/mcVBFPP593N4bAUW6516NQ/Ramen-Museum-NYC-SBS?node-id=0%3A1
