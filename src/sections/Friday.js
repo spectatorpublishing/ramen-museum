@@ -10,6 +10,9 @@ import {day_articles} from '../articles/articles.js';
 import Dropdown from './Dropdown';
 //styling
 import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg} from '../style.js';
+import { device } from '../device';
+import ramenLogo from '../images/ramen_museum_logo.png'
+
 
 const ParContainer=styled.div`
     width:50%;
@@ -24,6 +27,58 @@ const PicContainer=styled.div`
         width:65%;
     }
 `
+
+const Sponsered = styled.div`
+
+    display: flex;
+    justify-content: flex-end;
+    
+    padding-right: 1rem;
+        
+
+    @media ${device.tablet} {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;    
+    }
+`;
+
+const SponseredText = styled.p`
+    color: black;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 0.75rem;
+    line-height: 2rem;
+    
+    @media ${device.tablet} {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+`;
+
+
+const RamenLogoImg = styled.img`
+    width: 10rem;
+    padding-top: 1.2rem;
+
+    @media ${device.tablet} {
+    }
+
+    @media ${device.laptop} {
+        width: 20rem;
+        padding-top: 1.3rem;
+    }
+
+    @media ${device.laptopS} {
+        width: 20rem;
+        padding-top: 1.3rem;
+    }
+`;
+
+
 
 //flex column display for friday component
 export const ColumnDisplay= styled.div`
@@ -70,6 +125,12 @@ const Friday = ({current}) => {
                 <Picture src={Ramen} alt="Ramen"/>
                 <Par>{day_articles[4].friday5}</Par>
                 <Vector src={vectors}/>
+                <Sponsered>
+                    <SponseredText>Sponsored Content for </SponseredText>
+                    <a href="https://ramenmuseum.nyc/" target="_blank" rel="noreferrer">
+                        <RamenLogoImg src={ramenLogo} alt="Ramen Museum New York Logo" />
+                    </a>                
+                </Sponsered>
                 <Buttons> 
                     <BtnLink href="#Thursday"><SwipeBtn ><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn></BtnLink>
                 </Buttons>  

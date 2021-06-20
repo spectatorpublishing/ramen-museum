@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import foodBackground from '../images/top_background.png'
 import vector from '../images/top_overlay_vector.png'
-import ramenLogo from '../images/ramen_museum_logo.png'
 
 import foodBackgroundMobile from '../images/top_background_mobile.png'
 import vectorMobile from '../images/top_overlay_mobile.png'
@@ -154,7 +153,7 @@ const IntroWrapper = styled.div`
     
         padding-left: 7rem;
         padding-right: 15rem;
-       
+        padding-bottom: 10rem;
     }
 `;
 
@@ -175,55 +174,6 @@ const MainText = styled.p`
     }
 `;
 
-const Sponsered = styled.div`
-
-    display: flex;
-    justify-content: flex-end;
-    
-    padding-right: 1rem;
-        
-
-    @media ${device.tablet} {
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;    
-    }
-`;
-
-const SponseredText = styled.p`
-    color: black;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-
-    font-size: 0.75rem;
-    line-height: 2rem;
-    
-    @media ${device.tablet} {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-`;
-
-
-const RamenLogoImg = styled.img`
-    width: 10rem;
-    padding-top: 1.2rem;
-
-    @media ${device.tablet} {
-    }
-
-    @media ${device.laptop} {
-        width: 20rem;
-        padding-top: 1.3rem;
-    }
-
-    @media ${device.laptopS} {
-        width: 20rem;
-        padding-top: 1.3rem;
-    }
-`;
 
 const IntroWrapperMobile = styled.div`
 
@@ -330,12 +280,12 @@ const Home = ({current}) => (
                         </MainText>
                 </IntroWrapper>
 
-                <Sponsered>
+                {/* <Sponsered>
                     <SponseredText>Sponsored Content for </SponseredText>
                     <a href="https://ramenmuseum.nyc/" target="_blank" rel="noreferrer">
                         <RamenLogoImg src={ramenLogo} alt="Ramen Museum New York Logo" />
                     </a>                
-                </Sponsered>
+                </Sponsered> */}
 
             </TextWrapper>
         </Wrapper1>

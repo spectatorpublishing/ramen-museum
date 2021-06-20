@@ -43,6 +43,13 @@ export const Vector=styled.img`
     }
 `;
 
+export const SVG = styled.svg`
+    width:100%;
+    @media only screen and (max-width: 425px) {
+        display:none;
+    }
+`;
+
 //styling for images
 export const Picture=styled.img`
     display:block;
