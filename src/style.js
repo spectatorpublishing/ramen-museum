@@ -141,6 +141,12 @@ export const ShowDay= styled.div`
         animation-name: ${swipe};
         animation-duration: 1s;
     }
+    @media only screen and (min-width: 426px) {
+        padding-top:2vh;
+    }
+    @media only screen and (min-width: 768px) {
+        padding-top:8vh;
+    }
 `
 
 export const SBSLogo = styled.div`
@@ -149,7 +155,7 @@ export const SBSLogo = styled.div`
     padding: 1rem;
     justify-content: center;
 
-    @media ${device.tablet} {
+    @media only screen and (min-width: 426px) {
         display: none;
     }
 `;

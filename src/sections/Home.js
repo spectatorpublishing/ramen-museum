@@ -164,10 +164,7 @@ const MainText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-
     font-size: 1rem;
-    line-height: 1.5rem;
-
     @media ${device.tablet} {
         font-size: 1.25rem;
         line-height: 2rem;
@@ -178,13 +175,13 @@ const MainText = styled.p`
 const IntroWrapperMobile = styled.div`
 
     background: #FFFCF5;
-
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-
+    margin-top:6vh;
+    margin-bottom:6vh;
     @media ${device.tablet} {
-        display: none;
+        display: none;       
     }
 
 `;
@@ -193,8 +190,8 @@ const MobileStartButtonWrapper = styled.div`
 
     display: flex;
     justify-content: center;
-
-    @media ${device.tablet} {
+    margin-top:2vh;
+    @media only screen and (min-width: 426px) {
         display: none;
     }
 

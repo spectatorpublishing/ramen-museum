@@ -13,7 +13,7 @@ const Webdiv = styled.div`
         justify-content: space-evenly;
         line-height: 226%;
         background: #a05c50;
-        line-height: 79px;
+        padding:1.5vh;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -21,15 +21,18 @@ const Webdiv = styled.div`
 
     a{
         font-family: Bitter;
-        font-size: 25px;
+        font-size: 2vw;
         font-weight: 500;
         font-style: italic;   
         color: white;
         text-decoration: none;
+        @media only screen and (max-width: 700px) {
+            font-size: 2.5vw;
+    }
 
         &.active{
             font-weight: 700;
-            font-size: 30px;
+            font-size: 2.5vw;
             font-style: normal;
         }
     }
