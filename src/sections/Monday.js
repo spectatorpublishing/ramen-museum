@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import {day_articles} from '../articles/articles.js';
 import Dropdown from './Dropdown';
 //styling
-import { DayOfWeek, Vector, FirstLetter, LeftVectors, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg} from '../style.js';
+import { DayOfWeek, Vector, FirstLetter, LeftVectors, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg, createMarkup} from '../style.js';
 
 export const VerVector= styled.img`
     width:12%;    
@@ -44,8 +44,8 @@ const Monday = ({current}) => {
                     <VerVector src={verVectors} alt="Vertical wavy design"/>
                     <div>
                         <VectorPar><FirstLetter>{day_articles[0].monday1[0]}</FirstLetter>{day_articles[0].monday1.slice(1)}</VectorPar>
-                        <VectorPar>{day_articles[0].monday2}</VectorPar>
-                        <VectorPar>{day_articles[0].monday3}</VectorPar>
+                        <VectorPar dangerouslySetInnerHTML={createMarkup(day_articles[0].monday2)} />
+                        <VectorPar dangerouslySetInnerHTML={createMarkup(day_articles[0].monday3)} />
                         <Buttons style={{margin:'5vw'}}> 
                             <BtnLink href="/" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/> HOME</SwipeBtn></BtnLink>
                             <BtnLink href="#Tuesday"><SwipeBtn>TUESDAY <Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>

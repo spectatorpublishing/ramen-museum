@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import {day_articles} from '../articles/articles.js';
 import Dropdown from './Dropdown';
 //styling
-import { DayOfWeek,SVG,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg} from '../style.js';
+import { DayOfWeek,SVG,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg, createMarkup} from '../style.js';
 
 const TikTokPic=styled.img`
     display:block;
@@ -31,10 +31,13 @@ const Wednesday = ({current}) => {
                 <Dropdown/>
             </SBSLogo>
             <DayOfWeek>Wednesday</DayOfWeek>
-                        <Par><FirstLetter>{day_articles[2].wednesday1[0]}</FirstLetter>{day_articles[2].wednesday1.slice(1)}</Par>
+                        <Par>
+                            <FirstLetter>{day_articles[2].wednesday1[0]}</FirstLetter>
+                            <span dangerouslySetInnerHTML={createMarkup(day_articles[2].wednesday1.slice(1))} />
+                        </Par>
                         <TikTokPic src={TikTok} alt="Tik Tok screenshot"/>
                         <Par>{day_articles[2].wednesday2}</Par>
-                        <Picture src={Empty} alt="Placeholder image"/>
+                        <Picture src="https://cds-static-hosting.s3.amazonaws.com/ramen-wed.png" alt="Bowls of Ice Cream"/>
                         <Buttons> 
                             <BtnLink href="#Tuesday"><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>TUESDAY</SwipeBtn></BtnLink>
                             <BtnLink href="#Thursday"><SwipeBtn>THURSDAY<Arrow alt="Forward arrow" src={rightArr}/></SwipeBtn></BtnLink>

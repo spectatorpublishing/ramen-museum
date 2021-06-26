@@ -33,6 +33,10 @@ export const Par=styled.div`
     @media only screen and (max-width: 425px) {
         font-family: 'Open Sans', sans-serif;
     }
+
+    a {
+        color:#000000;
+    }
 `;
 
 //squiggly divisors, only show on tablet/laptop
@@ -121,6 +125,10 @@ export const VectorPar=styled.p`
     @media only screen and (max-width: 425px) {
         margin-left:1rem;
     }
+
+    a {
+        color: #000000;
+    }
 `
 
 //swiping motion on mobile
@@ -163,4 +171,9 @@ export const SBSLogo = styled.div`
 export const SBSLogoImg = styled.img`
     width: 6rem;
 `;
+
+
+export function createMarkup(markup) {
+    return {__html: markup};
+  }
 

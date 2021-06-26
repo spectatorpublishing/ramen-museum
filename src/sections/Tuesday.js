@@ -8,7 +8,7 @@ import rightArr from '../images/RightArrow.png'
 import {day_articles} from '../articles/articles.js';
 import Dropdown from './Dropdown';
 //styling
-import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg} from '../style.js';
+import { DayOfWeek,Vector,Par,Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg, createMarkup} from '../style.js';
 
 const Tuesday = ({current}) => {
     return (
@@ -23,7 +23,7 @@ const Tuesday = ({current}) => {
                         <Par><FirstLetter>{day_articles[1].tuesday1[0]}</FirstLetter>{day_articles[1].tuesday1.slice(1)}</Par>
                         <Picture src={riverside} alt="Riverside Park"/>
                         <Par>{day_articles[1].tuesday2}</Par>
-                        <Par>{day_articles[1].tuesday3} </Par>
+                        <Par dangerouslySetInnerHTML={createMarkup(day_articles[1].tuesday3)} />
                         <Picture src={ChelseaMarket} alt="Chelsea Market"/>
                         <Buttons> 
                             <BtnLink href="#Monday" ><SwipeBtn><Arrow alt="Back arrow" src={leftArr}/>MONDAY</SwipeBtn></BtnLink>

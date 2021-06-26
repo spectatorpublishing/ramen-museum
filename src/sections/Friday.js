@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import {day_articles} from '../articles/articles.js';
 import Dropdown from './Dropdown';
 //styling
-import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg} from '../style.js';
+import { DayOfWeek,Vector, Par, Picture, FirstLetter, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg, createMarkup} from '../style.js';
 import { device } from '../device';
 import ramenLogo from '../images/ramen_museum_logo.png'
 
@@ -52,6 +52,10 @@ const SponseredText = styled.p`
 
     font-size: 0.75rem;
     line-height: 2rem;
+
+    a {
+        color: black;
+    }
     
     @media ${device.tablet} {
         font-size: 1.5rem;
@@ -119,17 +123,17 @@ const Friday = ({current}) => {
                     <CroissantPic src={Food} alt="Croissant and other pastries"/>
                 </PicContainer>
             </ColumnDisplay>
-                <Par>{day_articles[4].friday3}</Par>
-                <Picture src={Empty} alt="Placeholder image"/>
+                <Par dangerouslySetInnerHTML={createMarkup(day_articles[4].friday3)} />
                 <Par>{day_articles[4].friday4}</Par>
                 <Picture src={Ramen} alt="Ramen"/>
                 <Par>{day_articles[4].friday5}</Par>
                 <Vector src={vectors}/>
                 <Sponsered>
-                    <SponseredText>Sponsored Content for </SponseredText>
+                    <SponseredText>Sponsored Content for {" "}
                     <a href="https://ramenmuseum.nyc/" target="_blank" rel="noreferrer">
-                        <RamenLogoImg src={ramenLogo} alt="Ramen Museum New York Logo" />
-                    </a>                
+                        Ramen Museum New York
+                    </a>              
+                    </SponseredText>  
                 </Sponsered>
                 <Buttons> 
                     <BtnLink href="#Thursday"><SwipeBtn ><Arrow alt="Back arrow" src={leftArr}/>THURSDAY</SwipeBtn></BtnLink>
