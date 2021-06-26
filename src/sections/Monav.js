@@ -21,7 +21,7 @@ const Navdiv = styled.div`
         text-decoration: none;
 
         &.active{
-            background #F6D1BD;;
+            background-color: #F6D1BD;
         }
     }
 
