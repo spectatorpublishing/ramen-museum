@@ -11,14 +11,10 @@ import Dropdown from './Dropdown';
 //styling
 import { DayOfWeek,SVG,Picture, FirstLetter,Par, Buttons, SwipeBtn, Arrow, ShowDay, BtnLink, SBSLogo, SBSLogoImg, createMarkup} from '../style.js';
 
-const TikTokPic=styled.img`
+const TikTokPic=styled.div`
     display:block;
     margin:auto;
     padding:2vw;
-    width:25vw;
-    @media only screen and (max-width: 768px) {
-        width:40vw;
-    }
 `
 
 const Wednesday = ({current}) => {
@@ -35,7 +31,19 @@ const Wednesday = ({current}) => {
                             <FirstLetter>{day_articles[2].wednesday1[0]}</FirstLetter>
                             <span dangerouslySetInnerHTML={createMarkup(day_articles[2].wednesday1.slice(1))} />
                         </Par>
-                        <TikTokPic src={TikTok} alt="Tik Tok screenshot"/>
+                        <TikTokPic>
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sbsmanager/video/6983747603989040389" data-video-id="6983747603989040389" style={{"max-width": "605px", "min-width": "325px", "z-index": -1}} > 
+                                <section> 
+                                    <a target="_blank" title="@sbsmanager" href="https://www.tiktok.com/@sbsmanager">@sbsmanager</a> 
+                                    <p>Feeling like a chef in my own kitchen! 
+                                        <a title="ramenmuseum" target="_blank" href="https://www.tiktok.com/tag/ramenmuseum">#ramenmuseum</a> 
+                                        <a title="ramenmuseumnewyork" target="_blank" href="https://www.tiktok.com/tag/ramenmuseumnewyork">#ramenmuseumnewyork</a> 
+                                        https://ramenmuseum.nyc
+                                    </p> 
+                                    <a target="_blank" title="♬ She Share Story (for Vlog) - 山口夕依" href="https://www.tiktok.com/music/She-Share-Story-for-Vlog-6722656094272883458">♬ She Share Story (for Vlog) - 山口夕依</a> 
+                                </section>
+                            </blockquote> 
+                        </TikTokPic>
                         <Par>{day_articles[2].wednesday2}</Par>
                         <Picture src="https://cds-static-hosting.s3.amazonaws.com/ramen-wed.png" alt="Bowls of Ice Cream"/>
                         <Buttons> 
